@@ -12,10 +12,7 @@ export default function Home() {
           prélèvements oubliés, et on prépare les lettres pour les arrêter.
         </p>
 
-        
-          href="#payer"
-          className="mt-8 inline-block w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform"
-        >
+        <a href="#payer" className="mt-8 inline-block w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform">
           Démarrer mon audit — 19€
         </a>
         <p className="mt-3 text-sm text-encre/50">
@@ -77,10 +74,7 @@ export default function Home() {
             Un paiement, un dépôt de relevé, et vos abonnements oubliés
             n'ont plus nulle part où se cacher.
           </p>
-          <button
-            className="mt-6 w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform"
-            disabled
-          >
+          <button className="mt-6 w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform" disabled>
             Démarrer mon audit — 19€
           </button>
           <p className="mt-3 text-sm text-encre/50">
@@ -92,15 +86,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="px-6 py-8 border-t border-encre/10">
         <div className="max-w-md mx-auto flex flex-wrap gap-x-4 gap-y-2 justify-center text-sm text-encre/50">
-          <a href="/mentions-legales" className="hover:text-encre/80">
-            Mentions légales
-          </a>
-          <a href="/cgv" className="hover:text-encre/80">
-            CGV
-          </a>
-          <a href="/confidentialite" className="hover:text-encre/80">
-            Confidentialité
-          </a>
+          <a href="/mentions-legales" className="hover:text-encre/80">Mentions légales</a>
+          <a href="/cgv" className="hover:text-encre/80">CGV</a>
+          <a href="/confidentialite" className="hover:text-encre/80">Confidentialité</a>
         </div>
       </footer>
     </main>
