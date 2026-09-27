@@ -1,3 +1,5 @@
+import PayButton from "./components/PayButton";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-creme text-encre">
@@ -12,9 +14,7 @@ export default function Home() {
           prélèvements oubliés, et on prépare les lettres pour les arrêter.
         </p>
 
-        <a href="#payer" className="mt-8 inline-block w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform">
-          Démarrer mon audit — 19€
-        </a>
+        <PayButton className="mt-8 w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform disabled:opacity-60" />
         <p className="mt-3 text-sm text-encre/50">
           Paiement unique. Résultat en 2 minutes.
         </p>
@@ -74,11 +74,9 @@ export default function Home() {
             Un paiement, un dépôt de relevé, et vos abonnements oubliés
             n'ont plus nulle part où se cacher.
           </p>
-          <button className="mt-6 w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform" disabled>
-            Démarrer mon audit — 19€
-          </button>
+          <PayButton className="mt-6 w-full rounded-full bg-corail text-creme font-corps font-semibold text-lg py-4 px-6 active:scale-[0.98] transition-transform disabled:opacity-60" />
           <p className="mt-3 text-sm text-encre/50">
-            Le paiement arrive à la prochaine étape.
+            Paiement sécurisé par Stripe.
           </p>
         </div>
       </section>
